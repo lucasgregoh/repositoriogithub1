@@ -271,6 +271,7 @@ html,body{min-height:100vh;background:var(--bg);font-family:'Montserrat',sans-se
 .pc-items li{display:flex;align-items:flex-start;gap:7px;font-size:11.5px;font-weight:600;color:var(--text);line-height:1.35}
 .pc-full .pc-items li{color:#fff}
 .pc-items li::before{content:'✓';color:var(--green);font-weight:900;font-size:13px;flex-shrink:0;margin-top:0}
+.pc-items.pc-items-noicon li::before{content:none}
 .pc-full .pc-items li::before{color:#fff}
 .pc-new{font-size:9px;font-weight:800;background:rgba(255,255,255,.25);color:#fff;border-radius:4px;padding:1px 5px;margin-right:3px;vertical-align:middle}
 .pc-basic .pc-new{background:var(--green);color:#fff}
@@ -1541,9 +1542,9 @@ img[data-src] { background:#f3f4f6; min-height:40px; }
       <!-- BÁSICO aparece depois, menor destaque -->
       <div class="pc-basic" style="opacity:.9">
         <span class="pc-badge" style="background:#6b7280;color:#fff;margin-bottom:10px">PLANO BÁSICO SEM BÔNUS</span>
-        <ul class="pc-items" style="margin-top:8px;margin-bottom:10px;font-size:11.5px">
-          <li>Cardápio para Lactantes –2 kg por Semana</li>
-          <li style="color:#9ca3af">⚠️ Acesso por 3 meses, sem atualizações</li>
+        <ul class="pc-items pc-items-noicon" style="margin-top:8px;margin-bottom:10px;font-size:11.5px">
+          <li>✅ Cardápio para Lactantes –2 kg por Semana</li>
+          <li style="color:#9ca3af">⚠️ Acesso por 7 dias</li>
           <li style="color:#9ca3af">❌ Sem suporte, sem bônus, sem acompanhamento</li>
         </ul>
         <div class="pc-divider"></div>
@@ -1559,9 +1560,14 @@ img[data-src] { background:#f3f4f6; min-height:40px; }
 
     <!-- Garantia -->
     <div style="display:flex;align-items:center;gap:14px;background:#fff7ed;border-radius:16px;padding:18px 20px;margin-top:16px;border:2px solid #fdba74">
-      <div style="width:58px;height:58px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:28px">🏅</div>
+      <div style="width:58px;height:58px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+      </div>
       <div>
-        <div style="font-size:15px;font-weight:900;color:#9d0208;margin-bottom:4px">Garantia de 30 dias</div>
+        <div style="font-size:15px;font-weight:900;color:#9d0208;margin-bottom:4px">Garantia de 90 dias na Super Oferta</div>
         <div style="font-size:12px;color:#6b7280;font-weight:600;line-height:1.6">Risco ZERO. Se você não gostar do Cardápio -2kg por semana, basta pedir o seu dinheiro de volta.</div>
       </div>
     </div>
